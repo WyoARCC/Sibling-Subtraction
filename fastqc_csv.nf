@@ -13,12 +13,12 @@ process FastQC {
 	val out
 
 	output:
-	env imgdir
+	env same_out
 
 	shell:
 	'''
 	fastqc !{L_read} !{R_read} --outdir=!{out} --extract
-	imgdir="!{out}/all_per_base_quality"
+	same_out=!{out}
 	'''
 }
 
