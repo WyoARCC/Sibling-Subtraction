@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-
+ 
 nextflow.enable.dsl=2
 
 params.reference = "/pfs/tc1/project/arcc-students/sthiongo/SiblingSubtraction/Practice/c_elegans.WS235.genomic.fa"
